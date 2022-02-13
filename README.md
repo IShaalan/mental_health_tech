@@ -70,7 +70,7 @@ In our classification model, we are using the “recall” scoring metric to min
 
 ![alt text](imgs/Confusion%20Matrix.png)
 
-|  | Recall Scores |
+|  | Recall Scores |  |  |  |
 |---|---|---|---|---|
 | Model | Treatment | No Treatment | Macro Average | Weight Average |
 | SVC | 0.69 | 0.78 | 0.74 | 0.74 |
