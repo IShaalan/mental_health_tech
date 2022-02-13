@@ -68,7 +68,7 @@ In our classification model, we are using the “recall” scoring metric to min
 
 ## Results
 
-![alt text](Confusion Matrix.png)
+![alt text](imgs/Confusion%20Matrix.png)
 
 |  | Recall Scores |  |  |  |
 |---|---|---|---|---|
