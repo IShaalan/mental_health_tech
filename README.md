@@ -47,14 +47,13 @@ We applied the following process to achieve our results:
 - Feature preprocessing
 - Feature transformation
 - Modeling
-  - SVC Model
-  - Logistic Regression
-  - Logistic Regression with backward features elimination
-  - KNN Model
-  - DecisionTree Model
+  - Support Vector Classifier
+  - Logistic Regression Classifier
+  - Logistic Regression with backward features elimination Classifier
+  - KNN Classifier
+  - DecisionTree Classifier
+  - RandomForest Classifier
 - Comparing Results
-
-The code is ordered in the sequence.
 
 ## Performance Metric
 
@@ -64,23 +63,9 @@ In our classification model, we are using the the f1 and recall scoring metrics 
 
 ![alt text](imgs/Confusion%20Matrix.png)
 
-|                             	| Test Scores 	|      	| CV Scores 	|      	|
-|-----------------------------	|-------------	|------	|-----------	|------	|
-| Model                       	| Recall      	| f1   	| Recall    	| f1   	|
-| DecisionTree                	| 0.79        	| 071  	| 0.81      	| 0.77 	|
-| SVC                         	| 0.72        	| 0.73 	| 0.74      	| 0.74 	|
-| Logistic                    	| 0.72        	| 0.72 	| 0.74      	| 0.74 	|
-| Random Forest               	| 0.71        	| 0.71 	| 0.79      	| 0.77 	|
-| Logistic Backward Selection 	| 0.70        	| 0.70 	| 0.73      	| 0.73 	|
-| KNN                         	| 0.63        	| 0.64 	| 0.60      	| 0.64 	|
-
-Upon testing the models on our test data set, we were able to reach approximately equivalent results with the different models. However, the SVC model performed slightly better than the other models. Also, notably the KNN have performed a lot worse than all the other models. One explanation to this is that KNN relies on distances between features and the majority of our features are categorical with relatively few categories.
-
 ## Conclusion
 
 Using data from the tech mental health survey collected from Kaggle, we built 6 machine learning models and came up with the one that would most efficiently identify individuals who are most likely to seek mental health treatment. We utilized the recall and f1 metrics, to minimize the chance of misclassifiying a potentially sick individuals.
-
-Using the DecisionTreeClassifier, we were able to correctly predict and identify 79% of the people who have seeked treatment.
 
 ## Contributors
 
